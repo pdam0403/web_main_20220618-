@@ -4,14 +4,47 @@
     <head>
         <meta charset="UTF=8">
         <title> Steam 메인화면</title>
+        <meta name="박진우" content="20220618">
+        <meta name="steam" content="305">
+        <base href="http://127.0.0.1:5500">
+        <style>
+            table {
+                font-size: 20pt;
+                color:white;
+            }
+        </style>
     </head>
     <body style="background-color: black;">
         <div style="display: flex;justify-content: center;">
-            <img src="image/logo_steam.svg" width="200"  height="60">
-            <h3 style="font-size: 24px; font-weight: bold; font-style: italic; color:white;">게임메뉴 1  2  3  4  5 </h3>
+           <a href="https://store.steampowered.com/?l=koreana" target="_blank"> <img src="image/logo_steam.svg" width="200"  height="60"></a>
+            <h3 style="font-size: 24px; font-weight: bold; font-style: italic; color:white;">
+               <a href="https://store.steampowered.com/" target="_blank"> 상점 </a>
+               <a href="https://store.steampowered.com/about/" target="_blank"> 설치 </a>
+                <a href="https://steamcommunity.com/" target="_blank"> 커뮤니티 </a> 
+               <a href="https://help.steampowered.com/en/" target="_blank"> 서포트 </a>
+
+            </h3>
         </div>
         <div style="display: flex; justify-content: center;">
-            <img src="image/스팀 라이브러리.jpg" width="1200" height="760">
+           <img src="image/스팀 라이브러리.jpg" width="1200" height="760"> 
         </div>
+             <div style="display: flex; justify-content: center ;">
+               <table border="1">
+                 <caption> 장르</caption>
+                  <tbody>
+                      <tr>
+                        <td>액션</td>
+                        <td>판타지</td>
+                        <td>전략</td>
+                     </tr>
+                     <tr>
+                        <td>비주얼노벨</td>
+                        <td>보드게임</td>
+                        <td>RPG</td>
+                     </tr>
+                  </tbody>
+              </table>
+            </div>
+        
     </body>
 </html>
