@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Steam 메인화면</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <meta name="박진우" content="20220618">
+        <meta name="steam" content="305">
+        <base href="http://127.0.0.1:5500">
+        <style>
+            table {
+                font-size: 20pt;
+                color:white;
+            }
+        </style>
+        <script type="text/javascript" src="---\js\basic_js_test.js"></script>
+        <script type="text/javascript" defer src="---/js/search.js"></script>
+        <script type="text/javascript" defer src="---/js/js_popup.js"></script>
+        
+        
+    </head>
+    <body style="background-color: black;" onload="pop_up();">
+        <div class="container-fluid" style="display: flex;justify-content: center;">
+           <a href="https://store.steampowered.com/?l=koreana" target="_blank"> <img src="---/image\LOGO.png" width="200"  height="60" onmouseover="over(this)" onmouseout="out(this)"></a>
+           
+           <h3 style="font-size: 24px; font-weight: bold; font-style: italic; color:white;">
+               <!-- <a href="https://store.steampowered.com/" target="_blank"> 상점 </a>
+               <a href="https://store.steampowered.com/about/" target="_blank"> 설치 </a>
+                <a href="https://steamcommunity.com/" target="_blank"> 커뮤니티 </a> 
+               <a href="https://help.steampowered.com/en/" target="_blank"> 서포트 </a> --></h3>
+               <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" >홈페이지</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login/profile.html" target='_blank'>기본정보(프로필)</a>
+                          </li> 
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          상점
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">홈</a></li>
+                          <li><a class="dropdown-item" href="#">위시리스트</a></li>
+                          <li><a class="dropdown-item" href="#">할인 중</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">뉴스</a></li>
+                          <li><a class="dropdown-item" href="#">통계</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">라이브러리</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://steamcommunity.com/" target="_blank">커뮤니티</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://help.steampowered.com/en/" target="_blank">서포트</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://store.steampowered.com/about/"  target="_blank">다운로드</a>
+                      </li>
+                    
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">취소</a>
+                      </li>
+                    </ul>
+
+                    
+                     <form class="d-flex" role="search"  onsubmit="return googleSearch();">
+                      <input class="form-control me-2" id="search_input" name="q" type="search" placeholder="search" aria-label="Search">
+                      <button class="btn btn-outline-success" id="search_btn" type="submit">검색</button> 
+                     </form>
+
+                  </div>
+                   <button onclick="logout()" class="btn btn-outline-success" id="logout_btn">로그아웃 하기</button>
+
+                </div>
+              </nav>
+
+        </div>
+        <div class="container-fluid" style="display: flex; justify-content: center;">
+           <img src="---/스팀 라이브러리.jpg" width="1200" height="760" class="img-fluid">
+        </div>
+             <div class="container-fluid" style="display: flex; justify-content: center ;">
+              
+                <table class="table caption-top" border="5">
+                 <caption> 게임</caption>
+                  <tbody class="table-group-divider">
+                      <tr>
+                        <td><b>메이저</b></td>
+                         <td>액션</td>
+                         <td>판타지</td>
+                         <td>전략</td>
+                      </tr>
+                      <tr>
+                         <td><b>마이너</b></td>
+                         <td>비주얼노벨</td>
+                         <td>보드게임</td>
+                         <td>공포</td>
+                      </tr>
+                  </tbody>
+                </table>
+             </div>
+            <sc href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
